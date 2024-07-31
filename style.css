@@ -1,0 +1,77 @@
+.topnav {
+    background-color: #288ba7;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+    
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+    
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+    
+.topnav a.split {
+    float: left;
+    background-color: #d62e44;
+    color: white;
+}
+.form {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    text-align: center;
+    padding: 30px;
+    height: 60vh;
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.split {
+    font-family: cursive;
+}
+.slideshow {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+.slide {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    margin-top: 10%;
+    width: 100%;
+}
+#kirim {
+    border-radius: 30px;
+    border-style: none;
+    padding: 1%;
+    background-color: rgb(13, 244, 86);
+}
+
+
+h1 {
+    text-align: center;
+    min-width: 310px;
+}
+body {
+    background-color: #d2d2c2;
+}

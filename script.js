@@ -1,0 +1,31 @@
+
+let index = 0;
+let transitionDelay = 2000;
+
+
+let slideContainer = document.querySelector(".slideshow");
+
+let slides = slideContainer.querySelectorAll(".slide");
+
+
+for (let slide of slides) {
+  slide.style.transition = `all ${transitionDelay/1000}s linear`;
+}
+
+
+showSlide(index);
+
+
+function showSlide(slideNumber) {
+  slides.forEach((slide, i) => {
+    slide.style.display = i == slideNumber ? "block" : "none";
+  });
+  index++;
+  // go back to 0 if at the end of slides
+  if (index >= slides.length) {
+    index = 0;
+  }
+}
+
+
+setInterval (() => showSlide(index), transitionDelay);
